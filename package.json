@@ -1,0 +1,19 @@
+{
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "description": "Esercizio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonelupone/express-blog-routing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonelupone/express-blog-routing/issues"
+  },
+  "homepage": "https://github.com/simonelupone/express-blog-routing#readme"
+}
