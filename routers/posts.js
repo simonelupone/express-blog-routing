@@ -10,7 +10,9 @@ router.get('/:id', (req, res) => {
     res.send(`Post ${req.params.id}`)
 })
 // store
-
+router.post('/', (req, res) => {
+    res.send('Store new post')
+})
 // update
 
 // modify
