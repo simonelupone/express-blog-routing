@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/simonelupone/express-blog-routing/issues"
   },
-  "homepage": "https://github.com/simonelupone/express-blog-routing#readme"
+  "homepage": "https://github.com/simonelupone/express-blog-routing#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
