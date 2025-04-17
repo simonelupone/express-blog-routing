@@ -18,7 +18,9 @@ router.put('/:id', (req, res) => {
     res.send(`Update post ${req.params.id}`)
 })
 // modify
-
+router.patch('/:id', (req, res) => {
+    res.send(`Edit part of post ${req.params.id}`)
+})
 // destroy
 
 module.exports = router
