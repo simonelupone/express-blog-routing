@@ -1,13 +1,20 @@
 const express = require('express')
 const router = express.Router()
 
+const posts = require('../posts')
+
 // index
 router.get('/', (req, res) => {
-    res.send('Posts list')
+    res.json(posts)
 })
 // show
 router.get('/:id', (req, res) => {
-    res.send(`Post ${req.params.id}`)
+    const postId = parseInt(req.params.id)
+    // isNan because in js 0 is falsy and letters are truthy
+    if (isNaN(postId)) return res.send('Invalid post ID')
+
+    const post = posts.find(post => post.id === postId)
+    post ? res.json(post) : res.send('Post not found')
 })
 // store
 router.post('/', (req, res) => {
