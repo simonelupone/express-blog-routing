@@ -2,7 +2,9 @@ const express = require('express')
 const router = express.Router()
 
 // index
-
+router.get('/', (req, res) => {
+    res.send('Posts list')
+})
 // show
 
 // store
@@ -13,3 +15,4 @@ const router = express.Router()
 
 // destroy
 
+module.exports = router
