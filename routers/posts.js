@@ -14,7 +14,9 @@ router.post('/', (req, res) => {
     res.send('Store new post')
 })
 // update
-
+router.put('/:id', (req, res) => {
+    res.send(`Update post ${req.params.id}`)
+})
 // modify
 
 // destroy
